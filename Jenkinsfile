@@ -28,7 +28,22 @@ pipeline
 				{
 					sh 'mvn install'
 				}
-			}			
+			}	
+			
+			stage('Build Success')
+			{
+				steps
+				{
+					echo 'Build Success'
+				}
+			}
+			stage('Finish Stage')
+			{
+				steps
+				{
+					echo 'Finish Stage'
+				}
+			}		
 			
 		}
 }
